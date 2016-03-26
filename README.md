@@ -1,4 +1,6 @@
 # JQuery-widget
+
+Summary:-
 Technologies Used- JSON,J Query,AJAX,JavaScript.
 Technologies Used- JSON,J Query,AJAX,JavaScript.
 
@@ -9,3 +11,6 @@ This is to simulate an administration widget.we will not be adding any form of s
 Final feature to my rating widget,the ability to send the rating to a service.
 The service has already been created. The service will act as a simple echo service,
 taking the rating you submit inside a JSON object, and then sending back a JSON containing a message
+
+How To Use:-
+Just Download and Launch in any Browser of your choice.
