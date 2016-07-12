@@ -2,7 +2,9 @@
 
 Summary:-
 Technologies Used- JSON,J Query,AJAX,JavaScript.
-Technologies Used- JSON,J Query,AJAX,JavaScript.
+
+![alt tag](https://github.com/divyanshu-rawat/JQuery-widget/blob/master/Screenshot%20from%202016-07-13%2000:54:02.png
+)
 
 Provide five circles for the user to select or click on.
 When the user hovers their mouse over a circle, that circle and all circles to the left must be filled with a color, such as yellow.
