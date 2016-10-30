@@ -1,0 +1,23 @@
+body {
+   font-family: cursive !important;
+  }
+  h1, h2, h3 {
+   color: black;
+   font-family: cursive !important;
+  }
+  .rating-circle {
+   height: 1.5em;
+   width: 1.5em;
+   box-shadow: 3px 3px 4px black;
+   border-radius: 1.1em;
+   display: inline-block;
+   margin: 1.5px;
+   padding: 1px;
+  }
+  .rating-hover {
+   background-color: black;
+  }
+
+  .rating-chosen {
+   background-color: #FD0202    ;
+  }

@@ -2,51 +2,43 @@
 <html xmlns = "http://www.w3.org/1999/xhtml">
 <head>
 
-    <title>Untitled Document</title>
+    <title>A javascript Game !!</title>
 
     <meta http-equiv = "Content-Type" content = "text/html; charset = utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="keywords" content="">
-    <style type="text/css">
-body {
-   font-family: Verdana;
-  }
-  h1, h2, h3 {
-   color: black;
-  }
-  .rating-circle {
-   height: 1.5em;
-   width: 1.5em;
-   border: .1em solid black;
-   border-radius: 1.1em;
-   display: inline-block;
-   margin: 1.5px;
-   padding: 1px;
-  }
-  .rating-hover {
-   background-color: black;
-  }
+   
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 
-  .rating-chosen {
-   background-color: lawngreen;
-  }
-  
-    </style>
 
-    <script src = "http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
 </head>
 
 
 <body>
 
+<nav class="navbar navbar-inverse" ng-controller="HomeController">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+                <span class="glyphicon glyphicon-apple" style="color:#5bdb48">
+                </span>
+               		Rating Application !
+            </a>
+        </div>
+    </div>
+</nav>
 
+<div class="container">
 
-<h1>Web Developer Conference</h1>
-<div>This session is about identifying elements using jQuery methods and selectors.</div>
- <h2>Finding elements using jQuery</h2>
- <h3>Rate this session</h3>
+ <div>This session is about identifying elements using jQuery methods and selectors.</div>
+ <h4>Finding elements using jQuery</h4>
+ <h4>Rate this session</h4>
+
 <div id="rating-container" max-value="5">
         <div class="rating-circle"></div>
         <div class="rating-circle"></div>
@@ -54,57 +46,94 @@ body {
         <div class="rating-circle"></div>
         <div class="rating-circle"></div>
  </div>
+  
     <div>
         <label for="max-value">Enter max value:</label>
-        <input type="text" id="max-value" />
-        <button type="button" id="update-max-value">Update max value</button>
+        <input type="text" id="max-value" class="form-control" />
+        <button type="button" class="btn btn-danger" style = "margin-top:5px;" id="update-max-value">Update max value</button>
     </div>
+  
     <br>
+  
     <div>
-        <button type="button" id="save-rating">Save rating</button>
+        <button type="button" class = "btn btn-success" id="save-rating">Save rating</button>
+  
     </div>
+  
     <div id="output"></div>
+
+</div>
 </body>
+
 <script type="text/javascript"> 
     $(function(){
         $("#update-max-value").click(function(){
+
             $object=$("#max-value").val();
+            
             $("#rating-container").attr("max-value",$object);
+            
             $("#rating-container").empty();
+            
             for (i=0; i<$object ;i++) 
             { 
                 $("#rating-container").append("<div class='rating-circle'></div>");
             }
+        
         });
     
          $("#rating-container").on("mouseover","div.rating-circle",function(){
+        
           $(this).removeClass("rating-chosen");
+        
           $(this).prevAll().removeClass("rating-chosen");
+        
           $(this).nextAll().removeClass("rating-chosen");
+        
           $(this).addClass("rating-hover");
+        
           $(this).prevAll().addClass("rating-hover");
         });
+        
           $("#rating-container").on("mouseout","div.rating-circle",function(){
+        
           $(this).removeClass("rating-hover"); 
+        
           $(this).prevAll().removeClass("rating-hover");
+        
           $(jquery_object).addClass("rating-chosen");      
+        
           $(jquery_object).prevAll().addClass("rating-chosen");
         });
+        
             $("#rating-container").on("click","div.rating-circle",function(){
+        
             index=$(this).index();
+        
             var access_element=$("#rating-container").children().get(index);
+        
             jquery_object=$(access_element);
+        
             $(jquery_object).addClass("rating-chosen");
+        
             $(jquery_object).prevAll().addClass("rating-chosen");
+        
             $(jquery_object).nextAll().removeClass("rating-chosen");
+        
         });
     });
     
     $("#save-rating").click(function(){
+  
                    var person={value:(index+1), maxValue:document.getElementById("rating-container").getAttribute("max-value")};
+        
                    $.post("http://jquery-edx.azurewebsites.net/api/Rating",person).done(function(message){
+        
                    $("#output").text(message.message);       
+        
                 }); 
+  
+
               });  
 </script>
 </html>
