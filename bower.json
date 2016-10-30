@@ -1,0 +1,22 @@
+{
+  "name": "JQuery-widget",
+  "homepage": "https://github.com/divyanshu-rawat/JQuery-widget",
+  "authors": [
+    "divyanshu <divyanshu.r46956@gmail.com>"
+  ],
+  "description": "A Jquery widget",
+  "main": "Rating_System.html",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0"
+  }
+}
