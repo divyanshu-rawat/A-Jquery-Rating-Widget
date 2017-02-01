@@ -33,6 +33,7 @@
 
 *  "bootstrap": "~3.3.7",  "jQuery" : "2.1.4"
 *  "font-awesome": "~4.7.0" 
+*  "jQuery" : "2.1.4"
 
 
 ### Examples !
