@@ -1,12 +1,21 @@
 > :star: Rating Service :star2: widget !
 
+### Demo 
+
+> [Live Demo Here !](https://mytestui.herokuapp.com/)
+
+#### For Any Query Ping Me
+
+[![Join the chat](https://img.shields.io/badge/gitter-join%20chat%20%E2%86%92-brightgreen.svg)](https://gitter.im/divyanshu001)
+
 ### Description 
 
-* Provide five circles for the user to select or click on.
+* App provides five circles for the user to select or click on.
   When the user hovers their mouse over a circle, that circle and all circles to the left must be filled with a color, such     as yellow.
   
 * Provide a configurable number of circles for the user to click on.Allow the number of circles to be updated by a text-box.
-  This is to simulate an administration widget.we will not be adding any form of security to the widget.
+  This is to simulate an administration widget.
+  I have not added any form of security to the widget.
   
 * Final feature to my rating widget,the ability to send the rating to a service.
   The service has already been created. The service will act as a simple echo service,
@@ -15,9 +24,9 @@
 
 ### Installation Instructions :grey_exclamation:
 
-* clone or download the repo. into any fresh temporary folder.
+* Clone or download the repo. into any fresh temporary folder.
 
-* cd into that root folder you just cloned locally.
+* Cd into that root folder you just cloned locally.
 
 * launch Rating_System.html enjoy. 
 
@@ -39,4 +48,8 @@
 ### Examples !
 
 
-![alt tag](https://github.com/divyanshu-rawat/JQuery-widget/blob/master/snapshot/rating_app.png)
+![alt tag](https://github.com/divyanshu-rawat/A_Rating_Jquery_Widget/blob/master/examples-img/amazon-icon.png)
+
+![alt tag](https://github.com/divyanshu-rawat/A_Rating_Jquery_Widget/blob/master/examples-img/mozilla-icon.png)
+
+![alt tag](https://github.com/divyanshu-rawat/A_Rating_Jquery_Widget/blob/master/examples-img/apple-icon.png)
