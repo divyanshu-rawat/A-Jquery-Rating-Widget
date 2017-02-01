@@ -31,7 +31,8 @@
   .font-style
   {
     font-family:cursive;
-    font-size:16px;
+    /*font-family: 'Tangerine', serif !important;*/
+    /*font-size:30px !important;*/
     color: white;
   }
 
@@ -40,8 +41,13 @@
     color: white;
   }
 
+  .active
+  {
+    font-family: 'Tangerine', serif !important;
+    font-size:27px;
+  }
+
   body {
    font-family: cursive !important;
-   /*background-color: black !important;*/
    background-image: url('../img/abc.jpg');
   }

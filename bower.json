@@ -18,6 +18,5 @@
   "dependencies": {
     "bootstrap": "^3.3.7",
     "font-awesome": "^4.7.0",
-    "jQuery" : "2.1.4"
   }
 }
