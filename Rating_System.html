@@ -21,17 +21,28 @@
 
 <body>
 
-<nav class="navbar navbar-inverse" ng-controller="HomeController">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <a class="navbar-brand" href="#">
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+
+      <a class="navbar-brand" href="#">
                 <span class="glyphicon glyphicon-apple" style="color:#5bdb48">
                 </span>
-               		Rating Application !
+                    Rating Application !
             </a>
-        </div>
+
     </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+
+    </div>
+  </div>
 </nav>
+
 
 <div class="container">
 
@@ -65,101 +76,6 @@
 </div>
 </body>
 
-<script type="text/javascript"> 
-    $(function(){
-        $("#update-max-value").click(function(){
-
-            $object=$("#max-value").val();
-            
-            $("#rating-container").attr("max-value",$object);
-            
-            $("#rating-container").empty();
-            
-            for (i=0; i<$object ;i++) 
-            { 
-                $("#rating-container").append("<div class='rating-circle'></div>");
-            }
-        
-        });
-    
-         $("#rating-container").on("mouseover","div.rating-circle",function(){
-        
-          $(this).removeClass("rating-chosen");
-        
-          $(this).prevAll().removeClass("rating-chosen");
-        
-          $(this).nextAll().removeClass("rating-chosen");
-        
-          $(this).addClass("rating-hover");
-        
-          $(this).prevAll().addClass("rating-hover");
-        });
-        
-          $("#rating-container").on("mouseout","div.rating-circle",function(){
-        
-          $(this).removeClass("rating-hover"); 
-        
-          $(this).prevAll().removeClass("rating-hover");
-        
-          $(jquery_object).addClass("rating-chosen");      
-        
-          $(jquery_object).prevAll().addClass("rating-chosen");
-        });
-        
-            $("#rating-container").on("click","div.rating-circle",function(){
-        
-            index=$(this).index();
-        
-            var access_element=$("#rating-container").children().get(index);
-        
-            jquery_object=$(access_element);
-        
-            $(jquery_object).addClass("rating-chosen");
-        
-            $(jquery_object).prevAll().addClass("rating-chosen");
-        
-            $(jquery_object).nextAll().removeClass("rating-chosen");
-        
-        });
-    });
-    
-    $("#save-rating").click(function(){
-  
-                   var person={value:(index+1), maxValue:document.getElementById("rating-container").getAttribute("max-value")};
-        
-                   $.post("http://jquery-edx.azurewebsites.net/api/Rating",person).done(function(message){
-        
-                   $("#output").text(message.message);       
-        
-                }); 
-  
-
-              });  
-</script>
+<script src = "my.js"></script>
 </html>
 
-
-<!--$(".rating-circle").mouseover(function(){
-            var index=$(this).index();
-            var access_element=$("#rating-container").children().get(index);
-            var jquery_object=$(access_element);
-            $(jquery_object).removeClass("rating-chosen");
-            $(jquery_object).prevAll().removeClass("rating-chosen");
-            $(jquery_object).addClass("rating-hover");
-            $(jquery_object).prevAll().addClass("rating-hover");
-        });
-         $(".rating-circle").mouseout(function(){
-            var index=$(this).index();
-            var access_element=$("#rating-container").children().get(index);
-            var jquery_object=$(access_element);
-            $(jquery_object).removeClass("rating-hover");
-            $(jquery_object).prevAll().removeClass("rating-hover");
-        });
-         
-            $(".rating-circle").click(function(){
-            var index=$(this).index();
-            var access_element=$("#rating-container").children().get(index);
-            var jquery_object=$(access_element);
-            $(jquery_object).addClass("rating-chosen");
-            $(jquery_object).prevAll().addClass("rating-chosen");
-        });!-->
