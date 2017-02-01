@@ -1,5 +1,3 @@
-> :star: Rating Service :star2: widget !
-
 ### Demo 
 
 > [Live Demo Here !](https://mytestui.herokuapp.com/)
