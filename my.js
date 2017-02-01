@@ -14,12 +14,12 @@
             
             for (i=0; i<$object ;i++) 
             { 
-                $("#rating-container").append("<div class='rating-circle'></div>");
+                $("#rating-container").append("<i class='fa fa-star rating-circle fa-3x' aria-hidden='true'></i>");
             }
         
         });
     
-         $("#rating-container").on("mouseover","div.rating-circle",function(){
+         $("#rating-container").on("mouseover","i.rating-circle",function(){
         
           $(this).removeClass("rating-chosen");
         
@@ -32,7 +32,7 @@
           $(this).prevAll().addClass("rating-hover");
         });
         
-          $("#rating-container").on("mouseout","div.rating-circle",function(){
+          $("#rating-container").on("mouseout","i.rating-circle",function(){
         
           $(this).removeClass("rating-hover"); 
         
@@ -43,7 +43,7 @@
           $(jquery_object).prevAll().addClass("rating-chosen");
         });
         
-            $("#rating-container").on("click","div.rating-circle",function(){
+            $("#rating-container").on("click","i.rating-circle",function(){
         
             index=$(this).index();
         

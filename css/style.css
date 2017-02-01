@@ -1,23 +1,47 @@
-body {
-   font-family: cursive !important;
-  }
-  h1, h2, h3 {
-   color: black;
-   font-family: cursive !important;
-  }
+
+
   .rating-circle {
-   height: 1.5em;
+/*   height: 1.5em;
    width: 1.5em;
    box-shadow: 3px 3px 4px black;
    border-radius: 1.1em;
-   display: inline-block;
-   margin: 1.5px;
+   display: inline-block;*/
+   /*margin: 1.5px;*/
    padding: 1px;
-  }
+   color: white;
+ }
   .rating-hover {
-   background-color: black;
+   color: #999999;
   }
 
   .rating-chosen {
-   background-color: #FD0202    ;
+   color: #666666;
+  }
+
+  .padding_o
+  {
+    padding:0px !important;
+  }
+
+  .margin-top
+  {
+    margin-top: 5px !important;
+  }
+
+  .font-style
+  {
+    font-family:cursive;
+    font-size:16px;
+    color: white;
+  }
+
+  #output
+  {
+    color: white;
+  }
+
+  body {
+   font-family: cursive !important;
+   /*background-color: black !important;*/
+   background-image: url('../abc.jpg');
   }
