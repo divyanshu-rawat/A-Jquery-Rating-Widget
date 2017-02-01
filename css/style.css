@@ -50,4 +50,5 @@
   body {
    font-family: cursive !important;
    background-image: url('../img/abc.jpg');
+   background-size: 100%;
   }
