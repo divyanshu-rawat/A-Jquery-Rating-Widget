@@ -19,6 +19,9 @@
   The service has already been created. The service will act as a simple echo service,
   taking the rating you submit inside a JSON object, and then sending back a JSON containing a message
 
+### Tip 
+
+* Feel Free to replace rating-icons with any of the font awesome icons ! just a tip !
 
 ### Installation Instructions :grey_exclamation:
 
