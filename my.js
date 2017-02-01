@@ -14,7 +14,7 @@
             
             for (i=0; i<$object ;i++) 
             { 
-                $("#rating-container").append("<i class='fa fa-star rating-circle fa-3x' aria-hidden='true'></i>");
+                $("#rating-container").append("<i class='fa fa-apple rating-circle fa-3x' aria-hidden='true'></i>");
             }
         
         });
