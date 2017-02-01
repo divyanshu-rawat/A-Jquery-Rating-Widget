@@ -1,6 +1,6 @@
 ### Demo 
 
-> [Live Demo Here !](https://mytestui.herokuapp.com/)
+> [Live Demo Here !](http://myratingwidget.bitballoon.com/)
 
 #### For Any Query Ping Me
 
