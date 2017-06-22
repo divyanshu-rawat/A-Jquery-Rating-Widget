@@ -17,7 +17,7 @@
 
 ##
 
-## Description 
+### Description 
 
 * App provides five circles for the user to select or click on.
   When the user hovers their mouse over a circle, that circle and all circles to the left must be filled with a color, such     as yellow.
@@ -30,11 +30,15 @@
   The service has already been created. The service will act as a simple echo service,
   taking the rating you submit inside a JSON object, and then sending back a JSON containing a message
 
-## Tip 
+##
+
+### Tip 
 
 * Feel Free to replace rating-icons with any of the font awesome icons ! just a tip !
 
-## Installation Instructions :grey_exclamation:
+##
+
+### Installation Instructions :grey_exclamation:
 
 * Clone or download the repo. into any fresh temporary folder.
 
@@ -44,19 +48,22 @@
 
 * I have attached screenshots below depicting various features of web app !
 
+##
 
-
-## Package Manager Used 
+### Package Manager Used 
 
 * Bower — A package manager for the web.
 
-## Dependencies
+##
+
+### Dependencies
 
 *  "bootstrap": "~3.3.7",  "jQuery" : "2.1.4"
 *  "font-awesome": "~4.7.0" 
 *  "jQuery" : "2.1.4"
 
-## Contributing
+
+### Contributing
 
 1. Create your **_branch_**: `git checkout -b my-new-feature`
 
@@ -67,6 +74,8 @@
 4. Send a **Pull Request**
 
 5. **_Enjoy!_**
+
+##
 
 ### Examples !
 
